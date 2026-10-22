@@ -1,7 +1,7 @@
 import { test, expect } from '../../base/pomFixture';
 
 test.describe("Flights Search", {
-  tag: ['@flights'],
+  tag: ['@flights', '@ui'],
 }, async () => {
 
   test.beforeEach(async ({ commonPage }) => {
@@ -83,6 +83,7 @@ test.describe("Flights Search", {
     await flightsPage.selectTripType('One-way');
 
     const originValue = await flightsObj.destinationFields.from.getAttribute('data-test-origin')
+
     // Origin already selected by default - Next should be selectin destination by clicking the 1st location)
     await customUtil.waitForVisibleThenClick(flightsObj.destinationFields.to)
     const destinationValue = await flightsObj.destinationFields.to.getAttribute('data-test-destination')

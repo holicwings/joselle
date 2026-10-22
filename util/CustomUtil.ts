@@ -1,10 +1,8 @@
-import { Page, Locator } from "@playwright/test";
+import { Locator } from "@playwright/test";
 import generalConst from "../generalConst.json";
+import { Base } from '../base/Base';
 
-export class CustomUtil {
-
-  constructor(private page: Page) {
-  }
+export class CustomUtil extends Base {
 
   /**
    * Waits for an element to be visible then clicks it

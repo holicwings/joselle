@@ -16,10 +16,6 @@ export class FlightsPage {
     this.flightsObj = new FlightsObj(page);
   }
 
-  async navigateToCheapFlights(): Promise<void> {
-    await this.page.goto('/');
-  }
-
   /**
    * Selecting the trip type via dropdown
    * @param name : Return, One-way, Multi-city

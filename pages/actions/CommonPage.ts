@@ -1,14 +1,11 @@
-import { type Page } from '@playwright/test';
+import { Base } from '../../base/Base';
 
-export class CommonPage {
-  readonly page: Page;
-
-  constructor(page: Page) {
-    this.page = page
-  }
+/**
+ * Common actions for the application
+ */
+export class CommonPage extends Base {
 
   async navigateToCheapFlights(): Promise<void> {
     await this.page.goto('/');
-
   }
 }
