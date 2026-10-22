@@ -1,0 +1,8 @@
+{
+  "timeouts": {
+    "short": 10000,
+    "medium": 30000,
+    "long": 60000,
+    "extraLong": 120000
+  }
+}

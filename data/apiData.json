@@ -1,0 +1,29 @@
+{
+    "newBooking": {
+        "firstname": "Jim",
+        "lastname": "Brown",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+            "checkin": "2013-02-23",
+            "checkout": "2013-02-23"
+        },
+        "additionalneeds": "Breakfast"
+    },
+    "updatedBooking": {
+        "firstname": "Jimmy",
+        "lastname": "White",
+        "totalprice": 521,
+        "depositpaid": false,
+        "bookingdates": {
+            "checkin": "2015-02-23",
+            "checkout": "2015-02-23"
+        },
+        "additionalneeds": "Lunch and Dinner Only"
+    },
+    "otherDetails": {
+        "totalPrice": {
+            "withDecimal": 256.79
+        }
+    }
+}
